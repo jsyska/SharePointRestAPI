@@ -1,0 +1,30 @@
+{
+  "name": "sp-request-example-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "jsom": "ts-node ./src/api/jsom.ts",
+    "jsomList": "ts-node ./src/api/jsomList.ts",
+    "request": "ts-node ./src/api/request.ts",
+    "getWebTitle": "ts-node ./src/api/getWebTitle.ts",
+    "getList": "ts-node ./src/api/getList.ts",
+    "build": "npm run tslint && tsc -p .",
+    "tslint": "tslint --project tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-sp-auth-config": "^2.3.0",
+    "sp-jsom-node": "^1.0.2",
+    "sp-pnp-node": "^2.0.1",
+    "sp-request": "^2.1.2"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.6.2"
+  }
+}
